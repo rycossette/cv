@@ -61,18 +61,17 @@ p {
 
 .middle {
     margin: 0;
-    padding: 45px;
+    padding: 45px 10% 10%;
     background-color: #EAEAEA;
-    height: 200`%;
 }
 
 .bottom {
     /* background-color: #3C4048; */
     margin: 0;
-    padding: 80px;
-    color: white;
+    padding: 90px;
+    background-color: #3C4048;
     font-weight: 300;
-    height: 150px;
+    height: 80px;
     text-align: center;
     position:relative;
 }
@@ -81,8 +80,8 @@ p {
 .reel {
     /* padding: 50px 15% 50px 15%; */
     margin: 0;
-    padding: 10%;
-    background-color: #EAEAEA;
+    padding: 50px;
+    /* background-color: #EAEAEA; */
     height:auto
 }
 
