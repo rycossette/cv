@@ -76,6 +76,14 @@ p {
     position:relative;
 }
 
+.thumbnail-row {
+    margin: 100px auto 100px auto;
+    text-align: left;
+}
+
+.img-thumb {
+    width: 300px;
+}
 
 .reel {
     /* padding: 50px 15% 50px 15%; */
@@ -97,6 +105,8 @@ p {
     width:100%;
     height:100%;
 }
+
+
 /* Contact Button    */
 
 .btn {
