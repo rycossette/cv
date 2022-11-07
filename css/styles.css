@@ -32,7 +32,8 @@ body {
         text-decoration: none;
         border-bottom-style: solid;
         border-bottom-width: 4px;
-}
+    }
+
     
 .titlebox {
     position: absolute;
@@ -55,6 +56,13 @@ body {
     font-weight: 200;
     font-size: 1.6rem;
     color: #ac84e8;
+}
+
+.gallery{
+	list-style-type:none;
+	margin-right:10px;
+	margin-bottom:10px;
+	float:left;
 }
 
 h1 {
@@ -164,4 +172,5 @@ p {
     background: #ac84e8;
     text-decoration: none;
   }
+  
 
