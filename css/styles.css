@@ -6,15 +6,15 @@ body {
     font-family: 'Barlow', sans-serif;
 }
 
-.nav {
-    padding: 20px;
+.nav-blur {
+    padding: .5% 2%;
     margin: 0;
     position: absolute;
     width: fit-content;
     right: 50px;
-    background: rgba(146, 81, 172, 0.274);
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+    background: rgba(93, 19, 123, 0.473);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 
 }
 
@@ -24,14 +24,13 @@ body {
     font-weight: 350;
     font-size: 1.6rem;
     text-decoration: none;
-    color: #caa7ff;
+    color: #ffffff;
     
     }
     .nav-link:hover {
-        color: #ede1ff;
-        text-decoration: none;
-        border-bottom-style: solid;
-        border-bottom-width: 4px;
+        color: #ffffff;
+        text-decoration:overline;
+        text-decoration:underline;
     }
 
     
@@ -94,8 +93,9 @@ p {
     /* background-color: #00ABB3; */
     margin: 0;
     padding: 25px;
-    background:url(../images/background-image.jpg) center;
-    background-size: cover;
+    background:url(../images/background-image.jpg) left;
+    background-attachment:local;
+    background-size: 155%;
     height: 400px;
     text-align: left;
     color: white;
@@ -114,13 +114,13 @@ p {
 
 .bottom {
     /* background-color: #3C4048; */
-    margin: 0;
-    padding: 90px;
+    /* margin: 0;
+    padding: 90px; */
     background-color: #3C4048;
-    font-weight: 300;
+    /* font-weight: 300;
     height: 80px;
     text-align: center;
-    position:relative;
+    position:relative; */
 }
 
 .thumbnail-row {
@@ -174,3 +174,49 @@ p {
   }
   
 
+/* footer */
+
+#footer {
+    text-align: center;
+    padding: 7% 5%;
+    background-color: #3C4048;
+}
+
+.social-icons {
+    margin: 20px 5px;
+}
+
+
+/* modal content */
+.lightbox {
+    width: 100%;
+}
+
+
+.modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+
+.modal-body {
+position:relative;
+padding:0px;
+min-height:400px;
+background:#ccc;
+}
+
+.close {
+position:absolute;
+right:-30px;
+top:0;
+z-index:999;
+font-size:2rem;
+font-weight: normal;
+color:#fff;
+opacity:1;
+}
+
+#image {
+min-height:200px;
+}

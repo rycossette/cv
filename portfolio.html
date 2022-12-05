@@ -1,162 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/portfolio.css">
+    <title>Portfolio</title>
+    <!-- bootstrap -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/66ca1e87df.js" crossorigin="anonymous"></script>
+
     <link rel="icon" href="https://github.com/rycossette/personal-site/blob/main/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;500&display=swap" rel="stylesheet">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <div class="header">
-        <div class="nav">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="portfolio.html">Porfolio</a>
-            <a class="nav-link" href="contact.html">Contact</a>
-        </div>
-        <div class="titlebox">
-            <p class="title">Ryan <br> Cossette</p>
-            <p class="subtitle">3d Artist.Content Engineer</p>
-        </div>
-    </div>
-    <!--MIddle section  -->
-    <div class="middle">
+    <section id="header">
+        <div class="container-fluid header">
 
-        <h3>PORTFOLIO</h3>
-        
-        <div class="buttons" id="myBtnContainer">
-            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-            <button class="btn" onclick="filterSelection('ai')"> ai</button>
-            <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-            <button class="btn" onclick="filterSelection('people')"> People</button>
-            </div>
-        
-            <!-- Portfolio Gallery Grid -->
+            <!-- nav bar  -->
+            <nav class="nav-blur">
+                <ul class="nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Blog</a>
+                    </li>
+
+                </ul>
+            </nav>
             <div class="row">
-                <div class="column ai">
-                    <div class="content">
-                    <img src="/images/ai/car1.png" alt="Mountains" style="width:100%">
-                    <!-- <h4>Mountains</h4>
-                    <p>Lorem ipsum dolor..</p> -->
-                    </div>
+
+                <div class="col-lg-6 titlebox">
+                    <p class="title">Ryan <br> Cossette</p>
+                    <p class="subtitle">3d Artist.Content Engineer</p>
                 </div>
-                <div class="column ai">
-                    <div class="content">
-                    <img src="/images/ai/glassdomes.png" alt="Lights" style="width:100%">
-                    <!-- <h4>Lights</h4>
-                    <p>Lorem ipsum dolor..</p> -->
-                    </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="main">
+        <div class="middle">
+            <div class="container">
+
+
+                <div class="gallery">
+                    <img src="https://dummyimage.com/200x100/000/fff&text=A" alt="" data-toggle="modal"
+                        data-bigimage="https://dummyimage.com/2000x1000/000/fff&text=A" data-target="#myModal"
+                        class="img-fluid">
+                    <img src="https://dummyimage.com/200x100/ccc/000&text=B" alt="" data-toggle="modal"
+                        data-bigimage="https://dummyimage.com/2000x1000/000/fff&text=B" data-target="#myModal"
+                        class="img-fluid">
+                    <img src="https://dummyimage.com/200x100/fff/000&text=C" alt="" data-toggle="modal"
+                        data-bigimage="https://dummyimage.com/2000x1000/000/fff&text=C" data-target="#myModal"
+                        class="img-fluid">
+                    <img src="https://dummyimage.com/200x100/ccc/000&text=D" alt="" data-toggle="modal"
+                        data-bigimage="https://dummyimage.com/2000x1000/000/fff&text=D" data-target="#myModal"
+                        class="img-fluid">
+                    <img src="https://dummyimage.com/200x100/fff/000&text=E" alt="" data-toggle="modal"
+                        data-bigimage="https://dummyimage.com/2000x1000/000/fff&text=E" data-target="#myModal"
+                        class="img-fluid">
                 </div>
-                <div class="column ai">
-                    <div class="content">
-                    <img src="/images/ai/mech2.png" alt="ai" style="width:100%">
-                    <!-- <h4>Forest</h4>
-                    <p>Lorem ipsum dolor..</p> -->
-                    </div>
-                </div>
-        
-                <div class="column cars">
-                    <div class="content">
-                    <img src="/images/ai/mech3.png" alt="Car" style="width:100%">
-                    <!-- <h4>Retro</h4>
-                    <p>Lorem ipsum dolor..</p> -->
-                    </div>
-                </div>
-                <div class="column cars">
-                    <div class="content">
-                    <img src="/images/ai/robot1.png" alt="Car" style="width:100%">
-                    <!-- <h4>Fast</h4>
-                    <p>Lorem ipsum dolor..</p> -->
-                    </div>
-                </div>
-                <div class="column cars">
-                    <div class="content">
-                    <img src="/images/ai/tank.png" alt="Car" style="width:100%">
-                    <!-- <h4>Classic</h4>
-                    <p>Lorem ipsum dolor..</p> -->
-                    </div>
-                </div>
-        
-                <div class="column people">
-                    <div class="content">
-                    <img src="/images/ai/valley.png" alt="People" style="width:100%">
-                    <!-- <h4>Girl</h4>
-                    <p>Lorem ipsum dolor..</p> -->
-                    </div>
-                </div>
-                <div class="column people">
-                    <div class="content">
-                    <img src="/w3images/people2.jpg" alt="People" style="width:100%">
-                    <!-- <h4>Man</h4>
-                    <p>Lorem ipsum dolor..</p> -->
-                    </div>
-                </div>
-                <div class="column people">
-                    <div class="content">
-                    <img src="/w3images/people3.jpg" alt="People" style="width:100%">
-                    <!-- <h4>Woman</h4>
-                    <p>Lorem ipsum dolor..</p> -->
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+
+
+                            <div class="modal-body">
+
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+
+                                <img src="//media.tenor.com/images/556e9ff845b7dd0c62dcdbbb00babb4b/tenor.gif" alt=""
+                                    id="image" class="img-fluid">
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
-        
-            <script>
-                filterSelection("all")
-                function filterSelection(c) {
-                var x, i;
-                x = document.getElementsByClassName("column");
-                if (c == "all") c = "";
-                for (i = 0; i < x.length; i++) {
-                    w3RemoveClass(x[i], "show");
-                    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-                }
-                }
-                
-                function w3AddClass(element, name) {
-                var i, arr1, arr2;
-                arr1 = element.className.split(" ");
-                arr2 = name.split(" ");
-                for (i = 0; i < arr2.length; i++) {
-                    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-                }
-                }
-                
-                function w3RemoveClass(element, name) {
-                var i, arr1, arr2;
-                arr1 = element.className.split(" ");
-                arr2 = name.split(" ");
-                for (i = 0; i < arr2.length; i++) {
-                    while (arr1.indexOf(arr2[i]) > -1) {
-                    arr1.splice(arr1.indexOf(arr2[i]), 1);     
-                    }
-                }
-                element.className = arr1.join(" ");
-                }
-                
-                
-                // Add active class to the current button (highlight it)
-                var btnContainer = document.getElementById("myBtnContainer");
-                var btns = btnContainer.getElementsByClassName("btn");
-                for (var i = 0; i < btns.length; i++) {
-                btns[i].addEventListener("click", function(){
-                    var current = document.getElementsByClassName("active");
-                    current[0].className = current[0].className.replace(" active", "");
-                    this.className += " active";
-                });
-                }
-                </script>
-       
-    </div>
 
-   
+            <div class="thumbnail-row">
+                <h3>Gallery Samples</h3>
+                <!-- <img class="img-thumb" src="images/lumberjack.jpg" alt="">
+                <img class="img-thumb" src="images/jungle.jpg" alt=""> -->
+                <img class="img-thumb" src="images/ai/valley.png" alt="">
+                <img class="img-thumb" src="images/ai/glassdomes.png" alt="">
+                <img class="img-thumb" src="images/ai/car1.png" alt="">
+                <img class="img-thumb" src="images/ai/mech3.png" alt="">
+                <img class="img-thumb" src="images/ai/mech2.png" alt="">
+                <img class="img-thumb" src="images/ai/robot1.png" alt="">
+                <img class="img-thumb" src="images/ai/tank.png" alt="">
+            </div>
 
-    
+        </div>
+
+    </section>
+
+    <footer id="footer">
+        <a class="btn" href="mailto:ryan@pixelarmory.com">Get in Touch</a>
+        <!-- <i class="fa-solid fa-envelope social-icons"></i>
+        <i class="fa-brands fa-facebook social-icons"></i>
+        <i class="fa-brands fa-twitter social-icons"></i>
+        <i class="fa-brands fa-instagram social-icons"></i> -->
+
+    </footer>
+
+
 
 
 </body>
+
 </html>
